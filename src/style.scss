@@ -1,0 +1,130 @@
+.formContainer{
+    background-color: #a7bcff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .formWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px 60px;
+        gap: 10px;
+        
+        .logo{
+            color: #5d5b8d;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .title{
+            color: #5d5b8d;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+       form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border: none;
+        
+            input{
+                padding: 12px;
+                border: none;
+                width: 250px;
+                border-bottom: 1px solid #a7bcff;
+
+                &::placeholder{
+                    color: rgb(175,175,175)
+                }
+            }
+
+            button{
+                background-color: #7b96ec;
+                color: white;
+                padding: 10px;
+                font-weight: bold;
+                font-size: 15px;
+                border: none;
+                cursor: pointer;
+            }
+            #file{
+                display: none;
+            }
+            label{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #8da4f1;
+                cursor: pointer;
+            }
+       }
+       p{
+        color: #5d5b8d;
+        font-size: 12px;
+        margin-top: 10px;
+       }
+    }  
+
+}
+
+.home{
+    background-color: #a7bcff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 65%;
+        height: 80%;
+        display: flex;
+        overflow: hidden;
+
+        .sidebar{
+            flex: 1;
+            background-color: #3e3c61;
+            
+            .navbar{
+                display: flex;
+                justify-content: space-between; 
+                align-items: center;
+                background-color: #2f2d52;
+                height: 50px;
+                padding: 10px;
+                color: white;             
+
+               .logo{
+                font-weight: bold;
+               }
+               .user{
+                display: flex;
+                gap:10px;
+               }
+               img{
+                background-color: #ddddf7;
+                height: 24px;
+                width: 24px;
+                border-radius: 50%;
+                object-fit: cover;
+               }
+               button{
+                background-color: #5d5b5d;
+                color: #ddddf7;
+                font-size: 10px;
+                border: none;
+                cursor: pointer;
+               }
+            }
+        }
+        .chat{
+            flex:2;
+            border: 1px solid white;
+        }
+    }
+}
