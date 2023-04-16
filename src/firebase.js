@@ -1,12 +1,19 @@
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth"
+import { getFirestore } from "firebase/firestore";
+import { getStorage} from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: process.env.Api_Key,
-  authDomain: process.env.Auth_Domain,
-  projectId: process.env.Project_Id,
-  storageBucket: process.env.Storage_Bucket,
-  messagingSenderId: process.env.Messaging_Sender_Id,
-  appId: process.env.App_Id,
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: "chat-c3854.firebaseapp.com",
+  projectId: "chat-c3854",
+  storageBucket: "chat-c3854.appspot.com",
+  messagingSenderId: "213783809927",
+  appId: "1:213783809927:web:2e8b92a30840c1f9800d22",
+  measurementId: "G-TTLE612W84",
 };
 
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
+export const auth = getAuth();
+export const storage = getStorage();
+export const db = getFirestore();
